@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    wsdlLocation="http://logcollectorazure.cloudapp.net/logpicture.asmx?WSDL"
+    xmlns="http://java.sun.com/xml/ns/jaxws">
+    <bindings node="wsdl:definitions/wsdl:portType[@name='LogPictureSoap']
+                       /wsdl:operation[@name='LogData']">
+        <enableAsyncMapping>true</enableAsyncMapping>
+    </bindings>
+</bindings>
